@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 10px;
+    font-family: $mainFont;
+    color: $text-color-1;
+}
+
+h1, h2, h3 {
+    font-family: $mainFont;
+}
+
+a {
+    text-decoration: none;
+}

@@ -1,0 +1,58 @@
+@import './utils';
+@import './components';
+@import './layout';
+
+html, body {
+    font-size: 10px;
+    background-color: $main-color;
+    font-family: $mainFont;
+}
+
+.divider {
+    height: 50px;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1145px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+h1 {
+    @include h1();
+}
+
+h2 {
+    @include h2();
+}
+
+a {
+    @include text-small();
+    text-decoration: none;
+}
+
+.text-small-2 {
+    @include text-small-2();
+}
+
+.text-medium {
+    @include text-medium();
+}
+
+.text-large {
+    @include text-large($lh: 2.4rem);
+}
+
+.text-large-date {
+    @include text-large();
+    background-color: $second-color;
+    border-radius: 1rem;
+    padding: 0.5rem 1.4rem;
+    margin-right: 2rem;
+}
+
+.button {
+    @extend %btn;
+}

@@ -1,0 +1,54 @@
+.talk {
+    width: 100%;
+    background-color: $white-color;
+    flex: 0 1 3.2rem;
+
+    border-radius: 2rem;
+
+
+    @media ($tablet) {
+        flex: 0 1 2rem;
+    }
+
+    @media ($tablet-sm) {
+        flex: 1 1 2rem;
+    }
+
+    @media ($mobile) {
+        flex: 1 1 2.6rem;
+    }
+
+    &__wrapper {
+        padding-top: 3rem;
+        padding-bottom: 5.5rem;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+
+        @media ($tablet) {
+            padding-bottom: 1.855rem;
+            padding-bottom: 3.323rem;
+        }
+    }
+
+    &__image {
+        @include img();
+        margin-bottom: 3rem;
+
+        @media ($tablet) {
+            max-width: 19.911rem;
+        }
+    }
+
+    &__text {
+        @include text-medium();
+        margin: 0 3rem;
+
+        @media ($tablet) {
+            margin-left: 1.855rem;
+            margin-right: 1.944rem;
+        }
+    }
+}

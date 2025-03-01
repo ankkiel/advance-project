@@ -1,0 +1,26 @@
+.letters {
+    @include section();
+
+    &__wrapper {
+        background-color: $color-bg-2;
+        border-radius: 2.9rem;
+        padding: 5.126rem 12.4rem;
+
+        @media (max-width: 100rem) {
+            padding-left: 2.8rem;
+            padding-right: 2.8rem;
+        }
+    }
+
+    &__title {
+        @include h2();
+        margin-bottom: 3rem;
+    }
+
+    &__items { 
+        display: flex;
+        gap: 2rem;
+        justify-content: space-around;
+        margin-bottom: 3rem;
+    }
+}

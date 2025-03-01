@@ -1,0 +1,115 @@
+.stage {
+    @include section();
+    &__wrapper {
+        padding-left: 6.8rem;
+        padding-top: 6.3rem;
+        padding-bottom: 6.7rem;
+
+        background: url('../images/bg-lightschool-1920.png') no-repeat center center;
+        background-size: cover;
+        border-radius: 3rem;
+
+        @media ($tablet) {
+            padding-left: 4.2rem;
+            padding-top: 3.7rem;
+            padding-bottom: 4.082rem;
+            background: url('../images/bg-lightschool-768.png') no-repeat center center;
+            background-size: cover;
+        }
+
+        @media ($tablet-sm) {
+            padding-top: 2.185rem;
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+
+        @media ($mobile) {
+            padding: 2.185rem 2rem 23.5rem;
+
+            background: url('../images/bg-lightschool-320.png') no-repeat center center;
+            background-size: cover;
+        }
+    }
+
+    &__header {
+        margin-bottom: 3rem;
+
+        @media ($tablet) {
+            margin-bottom: 1.856rem;
+        }
+
+        @media ($tablet-sm) {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: baseline;
+            justify-content: center;
+        }
+
+        @media ($mobile) {
+            align-items: center;
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    &__date {
+        @include text-large();
+        background-color: $second-color;
+        border-radius: 1rem;
+        padding: 0.5rem 1.4rem;
+        margin-right: 2rem;
+
+        @media ($tablet) {
+            margin-bottom: 1.1rem;
+        }
+
+        @media ($mobile) {   
+            margin-right: 0;
+        }
+    }
+
+    &__text {
+        @include text-large($lh: 2.4rem);
+    }
+
+    &__title {
+        @include h1();
+        margin-bottom: 3rem;
+        max-width: 63rem;
+
+        @media ($tablet) {
+            max-width: 39.3rem;
+            margin-bottom: 1.35rem;
+        }
+
+        @media ($tablet-sm) {
+            max-width: 30.2rem;
+        }
+
+        @media ($mobile) {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    &__desc {
+        @include text-large();
+        margin-bottom: 4.4rem;
+
+        max-width: 44.4rem;
+
+        @media ($tablet) {
+            max-width: 30.2rem;
+            text-align: left;
+            margin-bottom: 2.838rem;
+        }
+
+        @media ($mobile) {
+            text-align: center;
+            font-size: 1.3rem;
+            margin-bottom: 1.7rem;
+        }
+    }
+
+    &__btn {
+        @extend %btn;
+    }
+}

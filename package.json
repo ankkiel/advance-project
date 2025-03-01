@@ -1,0 +1,26 @@
+{
+    "name": "advance-project",
+    "version": "1.0.0",
+    "description": "Страница для бесплатного мастер-класса для Advance",
+    "scripts": {
+        "dev": "parcel src/index.html --open",
+        "kit": "parcel src/uikit.html --open",
+        "build:uikit": "rm -rf build/uikit && parcel build src/uikit.html --no-optimize --dist-dir build/uikit",
+        "build": "rm -rf build/www && parcel build src/index.html --no-optimize --dist-dir build/www"
+    },
+    "author": "ankkiel",
+    "license": "ISC",
+    "dependencies": {
+        "autoprefixer": "^10.4.16",
+        "parcel": "^2.10.3",
+        "postcss-modules": "^4.3.1",
+        "sass": "^1.69.5"
+    },
+    "browserslist": [
+        "last 5 version",
+        "ie 10"
+    ],
+    "devDependencies": {
+        "@parcel/transformer-sass": "^2.10.3"
+    }
+}

@@ -1,0 +1,39 @@
+@import './utils';
+@import './components';
+@import './layout';
+
+html, body {
+    font-size: 10px;
+    background-color: $white-color;
+    font-family: $mainFont;
+}
+
+
+h1, h2, h3 {
+    font-family: $mainFont;
+}
+
+body {
+    padding: 50px 15px;
+
+    @media ($tablet) {
+        padding: 16px 29px;
+    }
+
+    @media ($mobile) {
+        padding: 10px;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1145px;
+
+    @media ($tablet) {
+        max-width: 710px;
+    }
+
+    @media ($mobile) {
+        max-width: 300px;
+    }
+}
