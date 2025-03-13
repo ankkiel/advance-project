@@ -3,10 +3,10 @@
     "version": "1.0.0",
     "description": "Страница для бесплатного мастер-класса для Advance",
     "scripts": {
-        "dev": "parcel src/index.html --open",
-        "kit": "parcel src/uikit.html --open",
-        "build:uikit": "rm -rf build/uikit && parcel build src/uikit.html --no-optimize --dist-dir build/uikit",
-        "build": "rm -rf build/www && parcel build src/index.html --no-optimize --dist-dir build/www"
+        "dev": "parcel src/index.pug --open",
+        "kit": "parcel src/uikit.pug --open",
+        "build:uikit": "rm -rf build/uikit && parcel build src/uikit.pug --no-optimize --dist-dir build/uikit",
+        "build": "rm -rf build/www && parcel build src/index.pug --no-optimize --dist-dir build/www"
     },
     "author": "ankkiel",
     "license": "ISC",
@@ -14,6 +14,7 @@
         "autoprefixer": "^10.4.16",
         "parcel": "^2.10.3",
         "postcss-modules": "^4.3.1",
+        "pug": "^3.0.3",
         "sass": "^1.69.5"
     },
     "browserslist": [
@@ -21,6 +22,7 @@
         "ie 10"
     ],
     "devDependencies": {
+        "@parcel/transformer-pug": "^2.13.3",
         "@parcel/transformer-sass": "^2.10.3"
     }
 }
