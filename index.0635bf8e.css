@@ -62,11 +62,10 @@ a {
   position: relative;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .talks__btn, .stage__btn {
     text-align: center;
     font-size: 1.5rem;
-    font-size: 1.3rem;
   }
 }
 
@@ -74,11 +73,11 @@ a {
   opacity: .7;
 }
 
-.talks__btn:after {
+.talks__btn:after, .stage__btn:after {
   content: "";
   outline-offset: -1px;
-  background-color: rgba(255, 255, 255, .2);
-  background-image: url("hand.9c728ce7.svg"), none;
+  background-color: #fff3;
+  background-image: url("hand.e322fed7.svg"), none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: 3.7rem 3.2rem;
@@ -86,62 +85,34 @@ a {
   background-origin: padding-box, padding-box;
   background-clip: border-box, border-box;
   border-radius: 1.2rem;
-  outline: 1px solid rgba(255, 255, 255, .2);
+  outline: 1px solid #fff3;
   width: 6rem;
   height: 6rem;
   position: absolute;
   right: 1rem;
 }
 
-.stage__btn:after {
-  content: "";
-  outline-offset: -1px;
-  background-color: rgba(255, 255, 255, .2);
-  background-image: url("hand.9c728ce7.svg"), none;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 3.7rem 3.2rem;
-  background-attachment: scroll, scroll;
-  background-origin: padding-box, padding-box;
-  background-clip: border-box, border-box;
-  border-radius: 1.2rem;
-  outline: 1px solid rgba(255, 255, 255, .2);
-  width: 6rem;
-  height: 6rem;
-  position: absolute;
-  right: 1rem;
-}
-
-@media (max-width: 320px) {
-  .talks__btn:after {
-    right: .6rem;
-  }
-
-  .stage__btn:after {
+@media (width <= 320px) {
+  .talks__btn:after, .stage__btn:after {
     right: .6rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .talks__btn, .stage__btn {
     max-width: 30.2rem;
     padding: 1.8rem 7rem 1.9rem 2.1rem;
+    font-size: 1.3rem;
   }
 
-  .talks__btn:after {
-    background-size: 2.7rem 2.2rem;
-    width: 3.7rem;
-    height: 3.7rem;
-  }
-
-  .stage__btn:after {
+  .talks__btn:after, .stage__btn:after {
     background-size: 2.7rem 2.2rem;
     width: 3.7rem;
     height: 3.7rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .talks__btn, .stage__btn {
     max-width: 26rem;
     padding: 1.3rem 5rem 1.3rem 1.3rem;
@@ -156,19 +127,19 @@ a {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .talk {
     flex: 0 2rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .talk {
     flex: 2rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .talk {
     flex: 2.6rem;
   }
@@ -182,9 +153,8 @@ a {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .talk__wrapper {
-    padding-bottom: 1.855rem;
     padding-bottom: 3.323rem;
   }
 }
@@ -195,7 +165,7 @@ a {
   margin-bottom: 3rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .talk__image {
     max-width: 19.911rem;
   }
@@ -209,7 +179,7 @@ a {
   font-weight: 300;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .talk__text {
     margin-left: 1.855rem;
     margin-right: 1.944rem;
@@ -223,13 +193,13 @@ a {
   flex: 32%;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .letter {
     flex: 18.154rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .letter {
     flex: 250px;
   }
@@ -248,7 +218,7 @@ a {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .letter__wrapper {
     padding: 2.4rem 2.7rem 2.7rem 1.8rem;
   }
@@ -262,13 +232,13 @@ a {
   font-weight: 400;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .letter__title {
     font-size: 1.2rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .letter__title {
     font-size: 1.4rem;
     line-height: 120%;
@@ -281,7 +251,7 @@ a {
   height: 21.2rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .letter__image {
     width: 9.379rem;
     height: 13.6rem;
@@ -297,13 +267,13 @@ a {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .arrows {
     width: 10.2rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .arrows {
     width: 8.4rem;
   }
@@ -312,7 +282,7 @@ a {
 .arrows__button {
   cursor: pointer;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #0000;
   border: none;
   border-radius: .5rem;
   outline: none;
@@ -321,7 +291,7 @@ a {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .arrows__button {
     padding: .5rem;
   }
@@ -332,14 +302,14 @@ a {
   height: 35px;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .arrows__button svg {
     width: 2.1rem;
     height: 2.1rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .arrows__button svg {
     width: 2rem;
     height: 2rem;
@@ -362,13 +332,13 @@ a {
   font-weight: 300;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .arrows__count {
     font-size: 1rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .arrows__count {
     font-size: 1.2rem;
   }
@@ -394,7 +364,7 @@ a {
   margin-bottom: 2.5rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .header {
     margin-bottom: 1rem;
   }
@@ -411,14 +381,14 @@ a {
   height: 4.8rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .header__logo-img {
     width: 10.5rem;
     height: 2.595rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .header__logo-img {
     width: 7.1rem;
     height: 1.7rem;
@@ -433,7 +403,7 @@ a {
   transition: all .7s;
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .header__phone {
     color: #1a2e35;
     font-size: .9rem;
@@ -453,7 +423,7 @@ a {
   margin-bottom: 0;
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .stage {
     margin-bottom: 2.5rem;
   }
@@ -467,7 +437,7 @@ a {
   padding-left: 6.8rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .stage__wrapper {
     background: url("bg-lightschool-768.274400a9.png") center / cover no-repeat;
     padding-top: 3.7rem;
@@ -476,7 +446,7 @@ a {
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .stage__wrapper {
     padding-top: 2.185rem;
     padding-left: 2rem;
@@ -484,7 +454,7 @@ a {
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .stage__wrapper {
     background: url("bg-lightschool-320.bbf689b3.png") center / cover no-repeat;
     padding: 2.185rem 2rem 23.5rem;
@@ -495,13 +465,13 @@ a {
   margin-bottom: 3rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .stage__header {
     margin-bottom: 1.856rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .stage__header {
     flex-wrap: wrap;
     justify-content: center;
@@ -510,7 +480,7 @@ a {
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .stage__header {
     align-items: center;
     margin-bottom: 1.7rem;
@@ -528,7 +498,7 @@ a {
   line-height: 167%;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .stage__date {
     text-align: center;
     margin-bottom: 1.1rem;
@@ -536,7 +506,7 @@ a {
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .stage__date {
     margin-right: 0;
   }
@@ -549,7 +519,7 @@ a {
   line-height: 2.4rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .stage__text {
     text-align: center;
     font-size: 1.5rem;
@@ -565,38 +535,38 @@ a {
   font-weight: 700;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .stage__title {
     font-size: 3.6rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .stage__title {
     font-size: 2.2rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .stage__title {
     text-align: center;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .stage__title {
     max-width: 39.3rem;
     margin-bottom: 1.35rem;
   }
 }
 
-@media (max-width: 600px) {
+@media (width <= 600px) {
   .stage__title {
     max-width: 30.2rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .stage__title {
     margin-bottom: 1.5rem;
   }
@@ -611,7 +581,7 @@ a {
   line-height: 167%;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .stage__desc {
     text-align: center;
     text-align: left;
@@ -621,7 +591,7 @@ a {
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .stage__desc {
     text-align: center;
     margin-bottom: 1.7rem;
@@ -637,7 +607,7 @@ a {
   margin-bottom: 0;
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .talks {
     margin-bottom: 2.5rem;
   }
@@ -649,13 +619,13 @@ a {
   padding: 8.5rem 6.688rem;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .talks__wrapper {
     padding: 4rem 1.5rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .talks__wrapper {
     padding: 3rem 2rem 4rem;
   }
@@ -663,7 +633,6 @@ a {
 
 .talks__title {
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   border: 0;
@@ -683,15 +652,14 @@ a {
   display: flex;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .talks__items {
     gap: 2rem;
   }
 }
 
 .talks__btn {
-  margin: 0 auto;
-  margin-top: 3rem;
+  margin: 3rem auto 0;
 }
 
 .letters {
@@ -702,7 +670,7 @@ a {
   margin-bottom: 0;
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .letters {
     margin-bottom: 2.5rem;
   }
@@ -714,7 +682,7 @@ a {
   padding: 5.126rem 12.4rem;
 }
 
-@media (max-width: 100rem) {
+@media (width <= 100rem) {
   .letters__wrapper {
     padding-left: 2.8rem;
     padding-right: 2.8rem;
@@ -730,13 +698,13 @@ a {
   line-height: 130%;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .letters__title {
     font-size: 2.6rem;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .letters__title {
     font-size: 2rem;
   }
@@ -763,13 +731,13 @@ body {
   padding: 50px 15px;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   body {
     padding: 16px 29px;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   body {
     padding: 10px;
   }
@@ -780,16 +748,15 @@ body {
   margin: 0 auto;
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .container {
     max-width: 710px;
   }
 }
 
-@media (max-width: 320px) {
+@media (width <= 320px) {
   .container {
     max-width: 300px;
   }
 }
-
-/*# sourceMappingURL=index.58083604.css.map */
+/*# sourceMappingURL=index.0635bf8e.css.map */
