@@ -6,20 +6,21 @@ html(lang="ru")
     title Advance - бесплатный мастер класс / 5 декабря в 19:00
     link(rel="stylesheet" href="./assets/styles/index.scss")
     link(rel="icon" href="./assets/favicon.ico" type="image/x-icon")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
   body
     header.header
       .header__wrapper.container
         a.header__logo(href="#")
           img.header__logo-img(src="./assets/images/logo.png" alt="Логотип Advance")
-        a.header__phone(href="tel:+78007005342") 8 (800) 700-53-42
+        a.header__phone(href="tel:+78007005342" class="animate__animated animate__fadeInRight") 8 (800) 700-53-42
     main.main
       section.stage
         .stage__wrapper.container
           .stage__header
-            time.stage__date(datetime="2022-12-05T19:00") 5 декабря в 19:00
-            span.stage__text Бесплатный мастер-класс
-          h1.stage__title Как легко учиться в школе по всем предметам
-          p.stage__desc
+            time.stage__date(datetime="2022-12-05T19:00" class="animate__animated animate__fadeInUp") 5 декабря в 19:00
+            span.stage__text(class="animate__animated animate__fadeInUp") Бесплатный мастер-класс
+          h1.stage__title(class="animate__animated animate__fadeInLeft") Как легко учиться в школе по всем предметам
+          p.stage__desc(class="animate__animated animate__fadeInRight")
             | Секреты обучения от эксперта,
             br
             | который был двоечником,
@@ -27,7 +28,7 @@ html(lang="ru")
             | но смог закончить школу в 14 лет,
             br
             | вуз в 20, а в 21 уже создал свой бизнес
-          button.stage__btn Зарегистрироваться бесплатно
+          button.stage__btn(class="animate__animated animate__fadeInUp") Зарегистрироваться бесплатно
       section.talks
         .talks__wrapper.container
           h2.talks__title Обсудим
@@ -57,4 +58,4 @@ html(lang="ru")
                 svg(width="34" height="35" viewbox="0 0 34 35" fill="none" xmlns="http://www.w3.org/2000/svg")
                   path(d="M33.3717 17.0168C33.3717 26.1446 26.1265 33.5269 17.2102 33.5269C8.29382 33.5269 1.04861 26.1446 1.04861 17.0168C1.04861 7.88891 8.29382 0.506589 17.2102 0.506589C26.1265 0.506589 33.3717 7.88891 33.3717 17.0168Z" stroke="#343A40" stroke-width="0.971186")
                   path(fill-rule="evenodd" clip-rule="evenodd" d="M20.8374 20.5231L16.4682 25.2134C16.0947 25.6143 15.4884 25.6152 15.1138 25.2157C14.7392 24.816 14.7383 24.1672 15.1117 23.7664L19.4839 19.0729C19.8513 18.6818 20.0519 18.1651 20.0514 17.6149C20.051 17.0647 19.8497 16.5483 19.4845 16.161L15.1128 11.4823C14.7388 11.0821 14.7388 10.4332 15.1128 10.0331C15.4868 9.63283 16.0932 9.63288 16.4671 10.0331L20.8358 14.7085C21.5631 15.48 21.9658 16.5127 21.9667 17.6131C21.9676 18.7136 21.5666 19.747 20.8374 20.5231Z" fill="#343A40")
-                      
+    script(src="./animation.js")
