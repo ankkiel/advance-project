@@ -13,8 +13,9 @@
     }
 
     &__title {
-        @include h2();
         margin-bottom: 3rem;
+        
+        @include h2();
     }
 
     &__items { 

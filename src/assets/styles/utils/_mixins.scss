@@ -115,14 +115,8 @@
     text-decoration: none;
     border-color: transparent;
 
-    @include text-large($fw: 400, $lh: 140%);
-
     transition: all 0.7s ease;
   
-    @media ($tablet) {
-        font-size: 1.3rem;
-    }
-
     background: $color-btn;
     border-radius: 2.5rem;
     border: none;
@@ -132,6 +126,8 @@
 
     padding: 2.1rem 9rem 2.1rem 3.1rem;
 
+    @include text-large($fw: 400, $lh: 140%);
+    
     &:hover {
       opacity: .7; 
     }
@@ -161,6 +157,7 @@
     @media ($tablet) {
         max-width: 30.2rem;
         padding: 1.8rem 7rem 1.9rem 2.1rem;
+        font-size: 1.3rem;
 
         &::after {
             width: 3.7rem;

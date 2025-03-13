@@ -27,8 +27,9 @@
     }
 
     &__phone {
-        @include text-small();
         transition: all 0.7s ease;
+
+        @include text-small();
 
         &:hover {
             color: $color-btn-hover;

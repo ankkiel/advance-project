@@ -52,11 +52,12 @@
     }
 
     &__date {
-        @include text-large();
         background-color: $second-color;
         border-radius: 1rem;
         padding: 0.5rem 1.4rem;
         margin-right: 2rem;
+
+        @include text-large();
 
         @media ($tablet) {
             margin-bottom: 1.1rem;
@@ -72,9 +73,10 @@
     }
 
     &__title {
-        @include h1();
         margin-bottom: 3rem;
         max-width: 63rem;
+
+        @include h1();
 
         @media ($tablet) {
             max-width: 39.3rem;
@@ -91,10 +93,11 @@
     }
 
     &__desc {
-        @include text-large();
         margin-bottom: 4.4rem;
 
         max-width: 44.4rem;
+
+        @include text-large();
 
         @media ($tablet) {
             max-width: 30.2rem;
